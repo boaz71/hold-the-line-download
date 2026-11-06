@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hold The Line</title>
+<meta name="description" content="משחק יריות חינמי ל-Windows: מקלען במלחמת העולם השנייה מחזיק את הקו מול חמישה גלי התקפה וטנקים.">
+<style>
+:root { --bg: #0e0f0a; --panel: #1b1c13; --line: #3a3a24; --khaki: #d8c98f; --flame: #e8862e; --text: #e8e4d4; --dim: #a5a18c; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at 50% 0, #39351b, var(--bg) 60%); color: var(--text);
+       font: 17px/1.6 "Segoe UI", Arial, sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font: 900 clamp(38px, 9vw, 70px)/1 Impact, "Arial Black", sans-serif; letter-spacing: 3px; text-align: center;
+     margin: 12px 0 4px; color: var(--khaki); text-shadow: 0 0 16px #8a3a10, 0 3px 0 #000; direction: ltr; }
+.tag { text-align: center; color: var(--dim); margin: 0 0 20px; }
+video { display: block; width: 100%; border-radius: 8px; background: #000; box-shadow: 0 0 40px #c9862a33; }
+.btn { display: block; margin: 24px auto 10px; max-width: 420px; padding: 16px; text-align: center; border-radius: 8px;
+       background: linear-gradient(#ee9238, #a9500f); color: #fff; font-weight: 800; font-size: 20px; text-decoration: none;
+       box-shadow: 0 4px 0 #5c2b07; }
+.btn small { display: block; font-weight: 400; font-size: 14px; opacity: .9; }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 18px; margin: 16px 0; }
+h2 { margin: 0 0 6px; font-size: 19px; color: var(--khaki); }
+ol, ul { margin: 0; padding-inline-start: 22px; }
+code, kbd { direction: ltr; unicode-bidi: embed; background: #000; padding: 1px 6px; border-radius: 4px; font: 14px Consolas, monospace; }
+table { width: 100%; border-collapse: collapse; }
+td { padding: 3px 0; vertical-align: top; }
+td:first-child { width: 130px; }
+footer { text-align: center; color: var(--dim); font-size: 14px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>HOLD THE LINE</h1>
+  <p class="tag">אתה המקלען. הם בדרך. משחק יריות חינמי ל-Windows, מלחמת העולם השנייה</p>
+  <video src="trailer.mp4" controls playsinline preload="metadata"></video>
+  <a class="btn" href="https://github.com/boaz71/hold-the-line-download/releases/latest/download/HoldTheLine.zip">הורדה למחשב Windows<small>HoldTheLine.zip · בערך 39MB · הורדה מאובטחת מ-GitHub</small></a>
+  <section>
+    <h2>איך מתחילים</h2>
+    <ol>
+      <li>מורידים את ה-ZIP ופותחים אותו לתיקייה (קליק ימני ← Extract All).</li>
+      <li>מפעילים את <code>HoldTheLine.exe</code>. אם Windows מציג "Windows protected your PC", לוחצים <b>More info</b> ואז <b>Run anyway</b>. האזהרה מופיעה כי המשחק לא חתום בתעודה מסחרית.</li>
+      <li>בוחרים שדה קרב ומקלען, ומחזיקים את הקו.</li>
+    </ol>
+  </section>
+  <section>
+    <h2>מה יש במשחק</h2>
+    <ul>
+      <li>חמישה גלי התקפה של חי"ר, עם קצינים, רימונים, עמדת MG42 ומרגמות</li>
+      <li>בגל האחרון מגיעים טנקים, ורק בזוקה או PIAT עוצרים אותם</li>
+      <li>שלושה שדות קרב: צומת בנורמנדי ביום, מטע בלילה לאור נורים, והארדנים בשלג</li>
+      <li>מקלען אמריקאי עם Browning או בריטי עם Bren, כל אחד עם נשק וטעינה משלו</li>
+      <li>עוזבים את המקלע ועוברים לתעלה עם רובה צלפים או תת-מקלע, והחבר ממשיך לירות</li>
+      <li>ניהול חום הקנה, ריתוק האויב באש ותפיסת מחסה מאחורי שקי החול</li>
+    </ul>
+  </section>
+  <section>
+    <h2>מקשים</h2>
+    <table>
+      <tr><td>עכבר</td><td>כיוון המקלע</td></tr>
+      <tr><td>כפתור שמאלי / ימני</td><td>ירי / כוונות</td></tr>
+      <tr><td><kbd>R</kbd></td><td>טעינה</td></tr>
+      <tr><td><kbd>CTRL</kbd></td><td>התכופפות מאחורי שקי החול</td></tr>
+      <tr><td><kbd>E</kbd></td><td>השלכת רימון בחזרה</td></tr>
+      <tr><td><kbd>F</kbd></td><td>בזוקה (בגל האחרון)</td></tr>
+      <tr><td><kbd>G</kbd></td><td>נור תאורה (במפת הלילה)</td></tr>
+      <tr><td><kbd>V</kbd></td><td>מעבר בין המקלע לתעלה</td></tr>
+    </table>
+  </section>
+  <footer>דורש Windows 10/11 · עובד גם על מחשבים חלשים · לשחקן יחיד, בלי צורך באינטרנט</footer>
+</main>
+</body>
+</html>
